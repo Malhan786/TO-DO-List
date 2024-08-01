@@ -24,3 +24,12 @@ listContainer.addEventListener("click", function(e){
         e.target.parentElement.remove();
     }
 },false);
+
+function savedata(){
+    localStorage.setItem("data",listContainer.innerHTML);
+}
+
+function getdata(){
+    listContainer.innerHTML=localStorage.getItem("data");
+}
+getdata();
